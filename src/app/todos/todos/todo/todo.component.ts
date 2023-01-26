@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core'
-import { DomainTodo, FilterType, Todo } from '../../models/todos.models'
+import { DomainTodo, FilterType } from '../../models/todos.models'
 import { TodosService } from '../../services/todos.service'
 
 @Component({

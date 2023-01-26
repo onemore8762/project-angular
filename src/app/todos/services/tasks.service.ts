@@ -44,7 +44,7 @@ export class TasksService {
         `${environment.baseUrl}todo-lists/${data.todoId}/tasks/${data.taskId}`
       )
       .pipe(
-        map(res => {
+        map(() => {
           const stateTasks = this.tasks$.getValue()
           stateTasks[data.todoId] = stateTasks[data.todoId].filter(t => t.id !== data.taskId)
           return stateTasks
